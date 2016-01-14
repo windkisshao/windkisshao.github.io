@@ -121,6 +121,9 @@
 
 <div class="comments-count">
 	
+	  	<span></span>
+		<a href="/2016/01/14/hello-world/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/01/14/hello-world/" data-count-type="comments">&nbsp;</a>
+	
 </div>
 
 </footer>
@@ -177,6 +180,9 @@
 
 <div class="comments-count">
 	
+	  	<span></span>
+		<a href="/2016/01/14/IOS-引用计数/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/01/14/IOS-引用计数/" data-count-type="comments">&nbsp;</a>
+	
 </div>
 
 </footer>
@@ -226,6 +232,9 @@
 
 
 <div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2016/01/14/My-New-Post/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/01/14/My-New-Post/" data-count-type="comments">&nbsp;</a>
 	
 </div>
 
@@ -418,7 +427,7 @@ $(document).ready(function(){
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  hm.src = "//hm.baidu.com/hm.js?9810252aa8524c7659374fa93731e64a";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
@@ -439,6 +448,35 @@ var _hmt = _hmt || [];
 
 <!-- MathJax Begin -->
 <!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 <!-- MathJax End -->
