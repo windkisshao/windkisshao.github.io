@@ -11,16 +11,37 @@
     
 
     
-    <meta name="description" content="分享是一种美德">
+    <meta name="description" content="IOS偏好设置——写入tags:IOS 学习
+
+—很多IOS应用程序都支持偏好设置，比如保存用户名、密码、字体大小等设置，IOS提供了一套标准的解决方案来为应用加入偏好设置功能。
+
+—每个应用程序都有格NSUserDefaults实例，通过它来存取偏好设置。—例如：保存用户名、字体大小、是否自动登录
+
+示例代码
+1NSUserDefaults *defaults = [NSUserDefaults">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sherlock Chan's Blog">
-<meta property="og:url" content="http://yoursite.com/2016/01/15/流水很清楚惜花这个责任/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/01/15/IOS偏好设置——写入/index.html">
 <meta property="og:site_name" content="Sherlock Chan's Blog">
-<meta property="og:description" content="分享是一种美德">
-<meta property="og:updated_time" content="2016-01-15T02:08:45.000Z">
+<meta property="og:description" content="IOS偏好设置——写入tags:IOS 学习
+
+—很多IOS应用程序都支持偏好设置，比如保存用户名、密码、字体大小等设置，IOS提供了一套标准的解决方案来为应用加入偏好设置功能。
+
+—每个应用程序都有格NSUserDefaults实例，通过它来存取偏好设置。—例如：保存用户名、字体大小、是否自动登录
+
+示例代码
+1NSUserDefaults *defaults = [NSUserDefaults">
+<meta property="og:updated_time" content="2016-01-15T02:23:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sherlock Chan's Blog">
-<meta name="twitter:description" content="分享是一种美德">
+<meta name="twitter:description" content="IOS偏好设置——写入tags:IOS 学习
+
+—很多IOS应用程序都支持偏好设置，比如保存用户名、密码、字体大小等设置，IOS提供了一套标准的解决方案来为应用加入偏好设置功能。
+
+—每个应用程序都有格NSUserDefaults实例，通过它来存取偏好设置。—例如：保存用户名、字体大小、是否自动登录
+
+示例代码
+1NSUserDefaults *defaults = [NSUserDefaults">
 
     
     <link rel="alternative" href="/atom.xml" title="Sherlock Chan&#39;s Blog" type="application/atom+xml">
@@ -80,14 +101,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/01/15/流水很清楚惜花这个责任/" title="" itemprop="url"></a>
+      <a href="/2016/01/15/IOS偏好设置——写入/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="ChenHao" target="_blank" itemprop="author">ChenHao</a>
 		
   <p class="article-time">
-    <time datetime="2016-01-15T02:08:49.000Z" itemprop="datePublished"> 發表於 2016-01-15</time>
+    <time datetime="2016-01-15T02:23:32.000Z" itemprop="datePublished"> 發表於 2016-01-15</time>
     
   </p>
 </header>
@@ -96,21 +117,22 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS_u504F_u597D_u8BBE_u7F6E_u2014_u2014_u5199_u5165"><span class="toc-number">1.</span> <span class="toc-text">IOS偏好设置——写入</span></a></li></ol>
 		
 		</div>
 		
-		<p>分享是一种美德</p>
-  
+		<h1 id="IOS_u504F_u597D_u8BBE_u7F6E_u2014_u2014_u5199_u5165"><a href="#IOS_u504F_u597D_u8BBE_u7F6E_u2014_u2014_u5199_u5165" class="headerlink" title="IOS偏好设置——写入"></a>IOS偏好设置——写入</h1><p>tags:IOS 学习</p>
+<hr>
+<p>—很多IOS应用程序都支持偏好设置，比如保存用户名、密码、字体大小等设置，IOS提供了一套标准的解决方案来为应用加入偏好设置功能。</p>
+<blockquote>
+<p>—每个应用程序都有格NSUserDefaults实例，通过它来存取偏好设置。<br>—例如：保存用户名、字体大小、是否自动登录</p>
+</blockquote>
+<p><strong>示例代码</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];&#10;    [defaults setObject:@&#34;&#24352;&#19977;43423433443&#34; forKey:@&#34;username&#34;];&#10;    [defaults setFloat:14.22 forKey:@&#34;price&#34;];&#10;    [defaults setBool:NO forKey:@&#34;purchase&#34;];&#10;    //&#21516;&#27493;&#25968;&#25454;&#65292;&#24456;&#37325;&#35201;&#30340;&#19968;&#27493;&#65292;&#24378;&#21046;&#20889;&#20837;&#25968;&#25454;&#12290;&#10;    [defaults synchronize];&#10;    &#10;    //&#20559;&#22909;&#35774;&#32622;&#35835;&#21462;&#10;NSString *name = [[NSUserDefaults standardUserDefaults] objectForKey:@&#34;username&#34;];&#10;&#10;[[NSUserDefaults standardUserDefaults] boolForKey:@&#34;purchase&#34;];&#10;&#10;float price = [[NSUserDefaults standardUserDefaults] floatForKey:@&#34;price&#34;];&#10;&#10;NSLog(@&#34;%lf&#34;,price);&#10;NSLog(@&#34;%@&#34;,name);</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/分栏/">分栏</a>
-  </div>
 
 </div>
 
@@ -118,7 +140,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2016/01/15/流水很清楚惜花这个责任/" data-title="Sherlock Chan&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2016/01/15/IOS偏好设置——写入/" data-title="Sherlock Chan&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -131,17 +153,9 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/01/15/IOS偏好设置——写入/" title="">
-  <strong>上一篇：</strong><br/>
-  <span>
-  (no title)</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/01/15/纯技术文章/"  title="">
+<a href="/2016/01/15/流水很清楚惜花这个责任/"  title="">
  <strong>下一篇：</strong><br/> 
  <span>(no title)
 </span>
@@ -152,7 +166,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/01/15/流水很清楚惜花这个责任/" data-title="" data-url="http://yoursite.com/2016/01/15/流水很清楚惜花这个责任/"></div>
+	<div class="ds-thread" data-thread-key="2016/01/15/IOS偏好设置——写入/" data-title="" data-url="http://yoursite.com/2016/01/15/IOS偏好设置——写入/"></div>
 </section>
 
 
@@ -168,7 +182,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#IOS_u504F_u597D_u8BBE_u7F6E_u2014_u2014_u5199_u5165"><span class="toc-number">1.</span> <span class="toc-text">IOS偏好设置——写入</span></a></li></ol>
  
   </div>
 
